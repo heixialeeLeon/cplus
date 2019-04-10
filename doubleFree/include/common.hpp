@@ -11,6 +11,7 @@ public:
     static void set(int i);
     static void print();
 private:
+    //static std::vector<int> vec_int __attribute__ ((visibility ("hidden")));   // this can also avoid the double free
     static std::vector<int> vec_int;
 };
 
