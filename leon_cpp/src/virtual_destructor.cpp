@@ -34,9 +34,13 @@ int main()
     cout<<"sizeof BaseVirtual is " << sizeof(BaseVirtual)<<endl;
     Base* ptr_base = static_cast<Base*>(new Child());
     BaseVirtual* ptr_base_virtual = static_cast<BaseVirtual*>(new ChildVirtual());
+    Child* ptr_child = new Child();
 
+    cout<<"*********************************************************"<<endl;
     cout <<"The Destructor for the class without Virtual destructor: " <<endl;
     delete ptr_base;
     cout <<"The Destructor for the class with Virtual destructor: " <<endl;
     delete ptr_base_virtual;
+    cout<<"The Destructor for the child class without Virtual destructor:"<<endl;
+    delete ptr_child;
 }

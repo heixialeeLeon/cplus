@@ -33,6 +33,7 @@ add_executable(leon_cpp main.cpp imageProcess.hpp)
 target_link_libraries(leon_cpp ${TEST_LINK_LIBS})
 
 add_executable(virtual_destructor src/virtual_destructor.cpp)
+add_executable(virtual_func_call  src/virtual_func_call.cpp)
 
 add_executable(any src/any.cpp)
 target_link_libraries(any ${Boost_LIBRARIES})
